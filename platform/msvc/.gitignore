@@ -1,0 +1,5 @@
+hdiop/
+projects/*
+
+!projects/hdiop.vcxproj
+!projects/hdiop.vcxproj.filters
