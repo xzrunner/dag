@@ -6,11 +6,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\source\NodeImpl.cpp">
-      <Filter>dataset</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\..\..\include\hdiop\NodeImpl.h">
       <Filter>dataset</Filter>
     </ClInclude>

@@ -19,9 +19,6 @@
   <ItemGroup>
     <None Include="..\..\..\include\hdiop\NodeImpl.inl" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\source\NodeImpl.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectName>5.hdiop</ProjectName>
     <ProjectGuid>{0120800F-D01F-4106-BD08-64FBCDFF9EBD}</ProjectGuid>
