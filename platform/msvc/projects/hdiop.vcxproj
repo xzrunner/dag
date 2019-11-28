@@ -12,12 +12,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\include\hdiop\Node.h" />
-    <ClInclude Include="..\..\..\include\hdiop\NodeImpl.h" />
-    <ClInclude Include="..\..\..\include\hdiop\NodePort.h" />
-    <ClInclude Include="..\..\..\include\hdiop\typedef.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\include\hdiop\NodeImpl.inl" />
+    <None Include="..\..\..\include\hdiop\Node.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectName>5.hdiop</ProjectName>
