@@ -4,15 +4,32 @@
     <Filter Include="dataset">
       <UniqueIdentifier>{d847efb3-b53b-4e5a-811e-06e421a4e70c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="dataset\node">
+      <UniqueIdentifier>{43fcb058-fb00-4383-9fbf-b992a487fe4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dataset\variable">
+      <UniqueIdentifier>{3e5d0f4c-addc-45be-be10-87b4814164d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\include\hdiop\Node.h">
-      <Filter>dataset</Filter>
+      <Filter>dataset\node</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\hdiop\Variable.h">
+      <Filter>dataset\variable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\hdiop\VarType.h">
+      <Filter>dataset\variable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\hdiop\Node.inl">
-      <Filter>dataset</Filter>
+      <Filter>dataset\node</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\Variable.cpp">
+      <Filter>dataset\variable</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

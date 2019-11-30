@@ -12,9 +12,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\include\hdiop\Node.h" />
+    <ClInclude Include="..\..\..\include\hdiop\Variable.h" />
+    <ClInclude Include="..\..\..\include\hdiop\VarType.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\hdiop\Node.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\Variable.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectName>5.hdiop</ProjectName>
