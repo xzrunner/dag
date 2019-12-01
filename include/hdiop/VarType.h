@@ -7,6 +7,8 @@ enum class VarType
 {
     Invalid = 0,
 
+    Any,
+
     Bool,
     Int,
     Float,
