@@ -18,6 +18,9 @@ public:
     void SetName(const std::string& name) { m_name = name; }
     auto& GetName() const { return m_name; }
 
+    bool IsDirty() const { return m_dirty; }
+    void SetDirty(bool dirty) const { m_dirty = dirty; }
+
     void ClearConnections();
 
 public:
@@ -54,6 +57,8 @@ protected:
 
 private:
     std::string m_name;
+
+    mutable bool m_dirty = true;
 
     RTTR_ENABLE()
 
