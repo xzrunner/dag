@@ -35,11 +35,27 @@ Variable::Variable(const std::string& str)
     p = buf;
 }
 
+Variable::Variable(const sm::vec2& v2)
+    : type(VarType::Float2)
+{
+    auto buf = new float[2];
+    std::memcpy(buf, v2.xy, sizeof(float) * 2);
+    p = buf;
+}
+
 Variable::Variable(const sm::vec3& v3)
     : type(VarType::Float3)
 {
     auto buf = new float[3];
     std::memcpy(buf, v3.xyz, sizeof(float) * 3);
+    p = buf;
+}
+
+Variable::Variable(const sm::vec4& v4)
+    : type(VarType::Float4)
+{
+    auto buf = new float[4];
+    std::memcpy(buf, v4.xyzw, sizeof(float) * 4);
     p = buf;
 }
 

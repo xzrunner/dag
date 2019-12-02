@@ -18,7 +18,9 @@ public:
     explicit Variable(float f);
     explicit Variable(double d);
     explicit Variable(const std::string& str);
+    explicit Variable(const sm::vec2& v2);
     explicit Variable(const sm::vec3& v3);
+    explicit Variable(const sm::vec4& v4);
     Variable(const Variable& var);
     Variable& operator = (const Variable& var);
     ~Variable();
