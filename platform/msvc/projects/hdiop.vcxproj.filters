@@ -10,6 +10,9 @@
     <Filter Include="dataset\variable">
       <UniqueIdentifier>{3e5d0f4c-addc-45be-be10-87b4814164d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="dataset\parameters">
+      <UniqueIdentifier>{acd6bcca-0224-4921-af7c-68458e6d4a1d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\include\hdiop\Node.h">
