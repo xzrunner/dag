@@ -26,6 +26,7 @@ public:
     ~Variable();
 
     bool operator == (const Variable& var) const;
+    bool operator != (const Variable& var) const;
 
     VarType  type = VarType::Invalid;
     union

@@ -169,4 +169,9 @@ bool Variable::operator == (const Variable& var) const
     }
 }
 
+bool Variable::operator != (const Variable& var) const
+{
+    return !(operator == (var));
+}
+
 }
