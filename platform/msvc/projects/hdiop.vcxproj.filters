@@ -24,6 +24,12 @@
     <ClInclude Include="..\..\..\include\hdiop\VarType.h">
       <Filter>dataset\variable</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\hdiop\node_parms_gen.h">
+      <Filter>dataset\parameters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\hdiop\rttr_prop_gen.h">
+      <Filter>dataset\parameters</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\hdiop\Node.inl">

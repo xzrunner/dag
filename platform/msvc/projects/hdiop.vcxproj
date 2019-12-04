@@ -12,6 +12,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\include\hdiop\Node.h" />
+    <ClInclude Include="..\..\..\include\hdiop\node_parms_gen.h" />
+    <ClInclude Include="..\..\..\include\hdiop\rttr_prop_gen.h" />
     <ClInclude Include="..\..\..\include\hdiop\Variable.h" />
     <ClInclude Include="..\..\..\include\hdiop\VarType.h" />
   </ItemGroup>
