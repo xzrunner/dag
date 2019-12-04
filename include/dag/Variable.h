@@ -1,12 +1,12 @@
 #pragma once
 
-#include "hdiop/VarType.h"
+#include "dag/VarType.h"
 
 #include <SM_Vector.h>
 
 #include <string>
 
-namespace hdiop
+namespace dag
 {
 
 class Variable

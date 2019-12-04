@@ -5,7 +5,7 @@
 
 #include <rttr/type>
 
-namespace hdiop
+namespace dag
 {
 
 template <typename T>
@@ -72,4 +72,4 @@ void disconnect(const typename Node<T>::PortAddr& from, const typename Node<T>::
 
 }
 
-#include "hdiop/Node.inl"
+#include "dag/Node.inl"

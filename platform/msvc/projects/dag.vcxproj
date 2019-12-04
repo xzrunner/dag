@@ -11,22 +11,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\include\hdiop\Node.h" />
-    <ClInclude Include="..\..\..\include\hdiop\node_parms_gen.h" />
-    <ClInclude Include="..\..\..\include\hdiop\rttr_prop_gen.h" />
-    <ClInclude Include="..\..\..\include\hdiop\Variable.h" />
-    <ClInclude Include="..\..\..\include\hdiop\VarType.h" />
+    <ClInclude Include="..\..\..\include\dag\Node.h" />
+    <ClInclude Include="..\..\..\include\dag\node_parms_gen.h" />
+    <ClInclude Include="..\..\..\include\dag\rttr_prop_gen.h" />
+    <ClInclude Include="..\..\..\include\dag\Variable.h" />
+    <ClInclude Include="..\..\..\include\dag\VarType.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\include\hdiop\Node.inl" />
+    <None Include="..\..\..\include\dag\Node.inl" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\Variable.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>5.hdiop</ProjectName>
+    <ProjectName>5.dag</ProjectName>
     <ProjectGuid>{0120800F-D01F-4106-BD08-64FBCDFF9EBD}</ProjectGuid>
-    <RootNamespace>hdiop</RootNamespace>
+    <RootNamespace>dag</RootNamespace>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -56,12 +56,12 @@
     <_ProjectFileVersion>15.0.26730.12</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\hdiop\x86\Debug\</OutDir>
-    <IntDir>..\hdiop\x86\Debug\obj\</IntDir>
+    <OutDir>..\dag\x86\Debug\</OutDir>
+    <IntDir>..\dag\x86\Debug\obj\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\hdiop\x86\Release\</OutDir>
-    <IntDir>..\hdiop\x86\Release\obj\</IntDir>
+    <OutDir>..\dag\x86\Release\</OutDir>
+    <IntDir>..\dag\x86\Release\obj\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

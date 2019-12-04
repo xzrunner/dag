@@ -1,6 +1,6 @@
-#include "hdiop/Variable.h"
+#include "dag/Variable.h"
 
-namespace hdiop
+namespace dag
 {
 
 Variable::Variable(bool b)

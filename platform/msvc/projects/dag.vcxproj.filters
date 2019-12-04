@@ -15,24 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\include\hdiop\Node.h">
+    <ClInclude Include="..\..\..\include\dag\Node.h">
       <Filter>dataset\node</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\hdiop\Variable.h">
+    <ClInclude Include="..\..\..\include\dag\Variable.h">
       <Filter>dataset\variable</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\hdiop\VarType.h">
+    <ClInclude Include="..\..\..\include\dag\VarType.h">
       <Filter>dataset\variable</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\hdiop\node_parms_gen.h">
+    <ClInclude Include="..\..\..\include\dag\node_parms_gen.h">
       <Filter>dataset\parameters</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\hdiop\rttr_prop_gen.h">
+    <ClInclude Include="..\..\..\include\dag\rttr_prop_gen.h">
       <Filter>dataset\parameters</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\include\hdiop\Node.inl">
+    <None Include="..\..\..\include\dag\Node.inl">
       <Filter>dataset\node</Filter>
     </None>
   </ItemGroup>

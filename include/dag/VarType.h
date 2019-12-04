@@ -1,6 +1,6 @@
 #pragma once
 
-namespace hdiop
+namespace dag
 {
 
 enum class VarType

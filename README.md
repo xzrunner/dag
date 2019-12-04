@@ -1,3 +1,3 @@
-# hdiop
+# dag
 
-Houdini node base.
+Directed Acyclic Graph.

@@ -2,7 +2,7 @@
 
 #include <assert.h>
 
-namespace hdiop
+namespace dag
 {
 
 template <typename T>
