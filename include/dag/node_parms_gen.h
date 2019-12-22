@@ -13,6 +13,7 @@
 #define Float4 sm::vec4
 #define String std::string
 #define Array  std::vector
+#define Set    std::set
 
 // names
 public:
@@ -68,3 +69,4 @@ private:
 #undef Float4
 #undef String
 #undef Array
+#undef Set
