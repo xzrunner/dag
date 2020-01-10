@@ -22,6 +22,7 @@ static const constexpr char* const ParmNames[] = {
     #name,
 #include PARM_FILEPATH
 #undef  PARAM_INFO
+    ""
 };
 
 // type enums
