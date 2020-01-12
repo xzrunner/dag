@@ -42,6 +42,7 @@ public:
     {                                                   \
         if (member != _##name) {                        \
             member = _##name;                           \
+            OnParmChanged(#name);                       \
             SetDirty(true);                             \
         }                                               \
     }                                                   \
