@@ -13,6 +13,9 @@
     <Filter Include="dataset\parameters">
       <UniqueIdentifier>{acd6bcca-0224-4921-af7c-68458e6d4a1d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="eval">
+      <UniqueIdentifier>{43ae1c1e-7805-499a-b8ed-8dc9051fc3a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\include\dag\Node.h">
@@ -30,10 +33,16 @@
     <ClInclude Include="..\..\..\include\dag\rttr_prop_gen.h">
       <Filter>dataset\parameters</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\dag\Evaluator.h">
+      <Filter>eval</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\dag\Node.inl">
       <Filter>dataset\node</Filter>
+    </None>
+    <None Include="..\..\..\include\dag\Evaluator.inl">
+      <Filter>eval</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
