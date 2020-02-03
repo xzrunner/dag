@@ -41,7 +41,8 @@ public:
     struct PortVar
     {
         T           type;
-        std::string name;
+        std::string full_name;
+        std::string short_name;
     };
 
     struct Port
