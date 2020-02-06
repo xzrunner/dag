@@ -1,6 +1,7 @@
 #pragma once
 
 #include <queue>
+#include <stack>
 
 namespace dag
 {
@@ -40,6 +41,59 @@ bool Evaluator::HasNodeConns(const std::shared_ptr<Node<T>>& node)
         }
     }
     return false;
+}
+
+template <typename T>
+std::vector<size_t> Evaluator::TopologicalSorting(const std::vector<std::shared_ptr<Node<T>>>& nodes)
+{
+    // prepare
+    std::vector<int> in_deg(nodes.size(), 0);
+    std::vector<std::vector<int>> out_devices(nodes.size());
+    for (int i = 0, n = nodes.size(); i < n; ++i)
+    {
+        auto& device = nodes[i];
+        for (auto& port : device->GetImports())
+        {
+            if (port.conns.empty()) {
+                continue;
+            }
+
+            assert(port.conns.size() == 1);
+            auto from = port.conns[0].node.lock();
+            assert(from);
+            for (int j = 0, m = nodes.size(); j < m; ++j) {
+                if (from == nodes[j]) {
+                    in_deg[i]++;
+                    out_devices[j].push_back(i);
+                    break;
+                }
+            }
+        }
+    }
+
+    // sort
+    std::stack<int> st;
+    for (int i = 0, n = in_deg.size(); i < n; ++i) {
+        if (in_deg[i] == 0) {
+            st.push(i);
+        }
+    }
+    std::vector<size_t> ret;
+    while (!st.empty())
+    {
+        int v = st.top();
+        st.pop();
+        ret.push_back(v);
+        for (auto& i : out_devices[v]) {
+            assert(in_deg[i] > 0);
+            in_deg[i]--;
+            if (in_deg[i] == 0) {
+                st.push(i);
+            }
+        }
+    }
+
+    return ret;
 }
 
 }
