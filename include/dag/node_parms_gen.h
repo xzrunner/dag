@@ -2,18 +2,19 @@
 #error "You must define PARM_FILEPATH macro before include this file"
 #endif
 
-#define Bool   bool
-#define Int    int
-#define Int2   sm::ivec2
-#define Int3   sm::ivec3
-#define Int4   sm::ivec4
-#define Float  float
-#define Float2 sm::vec2
-#define Float3 sm::vec3
-#define Float4 sm::vec4
-#define String std::string
-#define Array  std::vector
-#define Set    std::set
+#define Bool    bool
+#define Int     int
+#define Int2    sm::ivec2
+#define Int3    sm::ivec3
+#define Int4    sm::ivec4
+#define Float   float
+#define Float2  sm::vec2
+#define Float3  sm::vec3
+#define Float4  sm::vec4
+#define Matrix4 sm::mat4
+#define String  std::string
+#define Array   std::vector
+#define Set     std::set
 
 // names
 public:
@@ -69,6 +70,7 @@ private:
 #undef Float2
 #undef Float3
 #undef Float4
+#undef Matrix4
 #undef String
 #undef Array
 #undef Set
