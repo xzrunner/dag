@@ -14,6 +14,8 @@ class Node
 public:
     virtual void OnParmChanged(const std::string& parm_name) {}
 
+    virtual void Execute() {}
+
     auto& GetImports() const { return m_imports; }
     auto& GetExports() const { return m_exports; }
 
