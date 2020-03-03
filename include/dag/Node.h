@@ -8,13 +8,15 @@
 namespace dag
 {
 
+class Context;
+
 template <typename T>
 class Node
 {
 public:
     virtual void OnParmChanged(const std::string& parm_name) {}
 
-    virtual void Execute() {}
+    virtual void Execute(const std::shared_ptr<Context>& ctx = nullptr) {}
 
     auto& GetImports() const { return m_imports; }
     auto& GetExports() const { return m_exports; }

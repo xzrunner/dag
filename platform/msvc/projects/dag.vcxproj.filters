@@ -39,6 +39,9 @@
     <ClInclude Include="..\..\..\include\dag\Utility.h">
       <Filter>tools</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\dag\Context.h">
+      <Filter>dataset</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\dag\Node.inl">

@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\include\dag\Context.h" />
     <ClInclude Include="..\..\..\include\dag\Graph.h" />
     <ClInclude Include="..\..\..\include\dag\Node.h" />
     <ClInclude Include="..\..\..\include\dag\node_parms_gen.h" />
