@@ -36,12 +36,18 @@
     <ClInclude Include="..\..\..\include\dag\Graph.h">
       <Filter>tools</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\dag\Utility.h">
+      <Filter>tools</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\dag\Node.inl">
       <Filter>dataset\node</Filter>
     </None>
     <None Include="..\..\..\include\dag\Graph.inl">
+      <Filter>tools</Filter>
+    </None>
+    <None Include="..\..\..\include\dag\Utility.inl">
       <Filter>tools</Filter>
     </None>
   </ItemGroup>

@@ -15,12 +15,14 @@
     <ClInclude Include="..\..\..\include\dag\Node.h" />
     <ClInclude Include="..\..\..\include\dag\node_parms_gen.h" />
     <ClInclude Include="..\..\..\include\dag\rttr_prop_gen.h" />
+    <ClInclude Include="..\..\..\include\dag\Utility.h" />
     <ClInclude Include="..\..\..\include\dag\Variable.h" />
     <ClInclude Include="..\..\..\include\dag\VarType.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\dag\Graph.inl" />
     <None Include="..\..\..\include\dag\Node.inl" />
+    <None Include="..\..\..\include\dag\Utility.inl" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\Variable.cpp" />
