@@ -14,22 +14,6 @@ template <typename T>
 class Node
 {
 public:
-    virtual void OnParmChanged(const std::string& parm_name) {}
-
-    virtual void Execute(const std::shared_ptr<Context>& ctx = nullptr) {}
-
-    auto& GetImports() const { return m_imports; }
-    auto& GetExports() const { return m_exports; }
-
-    void SetName(const std::string& name) { m_name = name; }
-    auto& GetName() const { return m_name; }
-
-    bool IsDirty() const { return m_dirty; }
-    void SetDirty(bool dirty) const { m_dirty = dirty; }
-
-    void ClearConnections();
-
-public:
     struct PortAddr
     {
         PortAddr() {}
@@ -58,6 +42,25 @@ public:
         PortVar var;
         std::vector<PortAddr> conns;
     };
+
+public:
+    virtual void OnParmChanged(const std::string& parm_name) {}
+
+    virtual void Execute(const std::shared_ptr<Context>& ctx = nullptr) {}
+
+    auto& GetImports() const { return m_imports; }
+    auto& GetExports() const { return m_exports; }
+
+    void SetImports(const std::vector<Port>& ports) { m_imports = ports; }
+    void SetExports(const std::vector<Port>& ports) { m_exports = ports; }
+
+    void SetName(const std::string& name) { m_name = name; }
+    auto& GetName() const { return m_name; }
+
+    bool IsDirty() const { return m_dirty; }
+    void SetDirty(bool dirty) const { m_dirty = dirty; }
+
+    void ClearConnections();
 
 protected:
     std::vector<Port> m_imports, m_exports;

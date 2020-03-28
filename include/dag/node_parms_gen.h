@@ -11,6 +11,8 @@
 #define Float2  sm::vec2
 #define Float3  sm::vec3
 #define Float4  sm::vec4
+#define Matrix2 sm::mat2
+#define Matrix3 sm::mat3
 #define Matrix4 sm::mat4
 #define String  std::string
 #define Array   std::vector
@@ -37,6 +39,7 @@ enum class Parm
 };
 
 // setter & getter
+#ifndef NOT_GEN_SETTER_GETTER_FUNC
 public:
 #define PARAM_INFO(id, type, name, member, default_val) \
     void Set##id(const type& _##name)                   \
@@ -53,6 +56,7 @@ public:
     }
 #include PARM_FILEPATH
 #undef  PARAM_INFO
+#endif // NOT_GEN_SETTER_GETTER_FUNC
 
 // member variables
 private:
@@ -70,6 +74,8 @@ private:
 #undef Float2
 #undef Float3
 #undef Float4
+#undef Matrix2
+#undef Matrix3
 #undef Matrix4
 #undef String
 #undef Array

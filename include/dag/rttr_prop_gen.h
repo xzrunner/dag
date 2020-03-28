@@ -22,5 +22,9 @@
 
 #define PARAM_INFO(id, type, name, member, default_val)                \
 .property(#name, &PARM_NODE_CLASS::Get##id, &PARM_NODE_CLASS::Set##id)
+#ifndef NO_PARM_FILEPATH
 #include PARM_FILEPATH
+#endif // NO_PARM_FILEPATH
 #undef  PARAM_INFO
+
+#undef NO_PARM_FILEPATH
