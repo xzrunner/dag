@@ -29,7 +29,7 @@ public:
 
     void MakeDirty();
 
-    void Update();
+    void Update(const std::shared_ptr<Context>& ctx = nullptr);
 
     auto& GetAllNodes() const { return m_nodes_map; }
 

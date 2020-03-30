@@ -136,7 +136,7 @@ void Graph<T>::MakeDirty()
 }
 
 template <typename T>
-void Graph<T>::Update()
+void Graph<T>::Update(const std::shared_ptr<Context>& ctx)
 {
     if (m_nodes_map.empty()) {
         return;
@@ -153,7 +153,7 @@ void Graph<T>::Update()
     {
         auto node = nodes[idx];
         if (node->IsDirty()) {
-            node->Execute();
+            node->Execute(ctx);
             node->SetDirty(false);
         }
     }
