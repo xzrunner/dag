@@ -71,7 +71,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\cu\src;..\..\..\..\sm\src\sm;..\..\..\..\guard\include;..\..\..\..\cpputil\include;..\..\..\..\geoshape\include;..\..\..\..\halfedge\include;..\..\..\..\polymesh3\include;..\..\..\..\unirender\include;..\..\..\..\lexer\include;..\..\..\..\external\rttr\include;..\..\..\..\external\rapidjson\include;..\..\..\..\external\boost\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\cu\src;..\..\..\..\sm\src\sm;..\..\..\..\guard\include;..\..\..\..\cpputil\include;..\..\..\..\geoshape\include;..\..\..\..\halfedge\include;..\..\..\..\polymesh3\include;..\..\..\..\lexer\include;..\..\..\..\external\rttr\include;..\..\..\..\external\rapidjson\include;..\..\..\..\external\boost\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -85,7 +85,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\cu\src;..\..\..\..\sm\src\sm;..\..\..\..\guard\include;..\..\..\..\cpputil\include;..\..\..\..\geoshape\include;..\..\..\..\halfedge\include;..\..\..\..\polymesh3\include;..\..\..\..\unirender\include;..\..\..\..\lexer\include;..\..\..\..\external\rttr\include;..\..\..\..\external\rapidjson\include;..\..\..\..\external\boost\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\cu\src;..\..\..\..\sm\src\sm;..\..\..\..\guard\include;..\..\..\..\cpputil\include;..\..\..\..\geoshape\include;..\..\..\..\halfedge\include;..\..\..\..\polymesh3\include;..\..\..\..\lexer\include;..\..\..\..\external\rttr\include;..\..\..\..\external\rapidjson\include;..\..\..\..\external\boost\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
