@@ -79,6 +79,8 @@ void make_connecting(const typename Node<T>::PortAddr& from, const typename Node
 
 template <typename T>
 void disconnect(const typename Node<T>::PortAddr& from, const typename Node<T>::PortAddr& to);
+template <typename T>
+void disconnect(const Node<T>& f_node, int f_idx, const Node<T>& t_node, int t_idx);
 
 }
 

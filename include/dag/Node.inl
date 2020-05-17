@@ -41,16 +41,20 @@ void disconnect(const typename Node<T>::PortAddr& from, const typename Node<T>::
 {
     auto f_node = from.node.lock();
     auto t_node = to.node.lock();
-    if (!f_node || !t_node) {
-        return;
+    if (f_node && t_node) {
+        disconnect(*f_node, from.idx, *t_node, to.idx);
     }
+}
 
-    assert(f_node->get_type().is_derived_from<Node<T>>());
-    auto& f_port = std::static_pointer_cast<Node<T>>(f_node)->GetExports()[from.idx];
+template <typename T>
+void disconnect(const Node<T>& f_node, int f_idx, const Node<T>& t_node, int t_idx)
+{
+    assert(f_node.get_type().is_derived_from<Node<T>>());
+    auto& f_port = static_cast<const Node<T>&>(f_node).GetExports()[f_idx];
     bool finded = false;
     for (auto itr = f_port.conns.begin(); itr != f_port.conns.end(); )
     {
-        if (itr->node.lock() == t_node && itr->idx == to.idx) {
+        if (itr->node.lock().get() == &t_node && itr->idx == t_idx) {
             itr = const_cast<Node<T>::Port&>(f_port).conns.erase(itr);
             finded = true;
         } else {
@@ -59,12 +63,12 @@ void disconnect(const typename Node<T>::PortAddr& from, const typename Node<T>::
     }
     assert(finded);
 
-    assert(t_node->get_type().is_derived_from<Node<T>>());
-    auto& t_port = std::static_pointer_cast<Node<T>>(t_node)->GetImports()[to.idx];
+    assert(t_node.get_type().is_derived_from<Node<T>>());
+    auto& t_port = static_cast<const Node<T>&>(t_node).GetImports()[t_idx];
     finded = false;
     for (auto itr = t_port.conns.begin(); itr != t_port.conns.end(); )
     {
-        if (itr->node.lock() == f_node && itr->idx == from.idx) {
+        if (itr->node.lock().get() == &f_node && itr->idx == f_idx) {
             itr = const_cast<Node<T>::Port&>(t_port).conns.erase(itr);
             finded = true;
         } else {
