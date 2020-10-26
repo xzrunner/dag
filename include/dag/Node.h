@@ -48,11 +48,11 @@ public:
 
     virtual void Execute(const std::shared_ptr<Context>& ctx = nullptr) {}
 
+    virtual void SetImports(const std::vector<Port>& ports) { m_imports = ports; }
+    virtual void SetExports(const std::vector<Port>& ports) { m_exports = ports; }
+
     auto& GetImports() const { return m_imports; }
     auto& GetExports() const { return m_exports; }
-
-    void SetImports(const std::vector<Port>& ports) { m_imports = ports; }
-    void SetExports(const std::vector<Port>& ports) { m_exports = ports; }
 
     void SetName(const std::string& name) { m_name = name; }
     auto& GetName() const { return m_name; }
